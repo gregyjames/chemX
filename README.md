@@ -38,3 +38,8 @@ Example
     </script>
 </body>
 </html>
+
+
+TO BUILD
+=======
+Go into root directory and run "grunt --build"
