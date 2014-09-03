@@ -7,7 +7,7 @@ Example
 
 <html>
 <head>
-    <script src="library.js" type="text/javascript"></script>
+    <script src="chemX.js" type="text/javascript"></script>
 </head>
 <body>
 <div title="yoooooo" id="xad" style="font-family: arial; color: #fff;"></div>  
