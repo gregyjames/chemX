@@ -42,4 +42,4 @@ Example
 
 TO BUILD
 =======
-Go into root directory and run "grunt -force"
+Go into root directory and run "Build.bat". Note for compression to run, you must place google's closure compiler's compiler.jar into the same directory as the bat file.
