@@ -1,7 +1,7 @@
 chemX
 =====
 
-A simple jquery like library. That favors size over functions.
+The chemX library is a light jquery like dom manuipilation library.
 
 Example
 
