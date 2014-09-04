@@ -11,7 +11,9 @@ function X(selector) {
         if(!value) return self.element.getAttribute(name);
         self.element.setAttribute(name, value);
         return self;
-    };self.clearattr = function (name) {
+    };self.camelCase = function (string) {
+     return string.replace(rmsPrefix, "ms-").replace(rdashAlpha, fcamelCase);
+};self.clearattr = function (name) {
         self.element.setAttribute(name, " ");
         return self;
     };self.css = function (value){
@@ -23,9 +25,22 @@ function X(selector) {
         else{
         self.element.setAttribute('style', value); 
         }
-    };self.html = function () {
+    };self.error = function (msg) {
+     throw new Error(msg);
+};self.eval = function (v) {
+     try {
+        return eval(v);
+    } catch(e) {
+        return ""
+    }
+};self.html = function () {
 		return self.element;
-	};self.value = function (text) {
+	};self.isNumeric = function (obj) {
+     return !obj.isArray && (obj - parseFloat(obj) + 1) >= 0;
+};self.on = function (type, callback) {
+        self.element['on' + type] = callback;
+        return self;
+    };self.value = function (text) {
         if(!text) return self.element.innerHTML;
         self.element.innerHTML = text;
         return self;
